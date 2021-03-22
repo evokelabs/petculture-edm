@@ -1,4 +1,7 @@
 // GLOBAL
+p {
+  hyphens: none;
+}
 .bold {
   font-weight: bold;
 }
@@ -26,8 +29,12 @@
 .background-blue {
   background-color: $blue;
 
-      p {font-size: 11px;}
+      p {font-size: 12px;}
     
+}
+
+.background-orange {
+  background-color: #FBE5D8;
 }
 
 .background-darkgrey {
@@ -52,6 +59,7 @@
   }
 
     table.button table td a {
+      text-align: center !important;
       text-align: center;
     }
 }
