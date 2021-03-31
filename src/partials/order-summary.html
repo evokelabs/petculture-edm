@@ -38,7 +38,8 @@
                     <tr>
                         <td style="width: 25%" valign="top">
                             <a href="https://www.petculture.com.au/products/{{ item.product.handle }}"><img
-                                    src="{{{{raw}}}}{% if item.product.variant.images.0.src %}{{item.product.variant.images.0.src}}{%else%}{{item.product.images.0.src|missing_product_image}}{%endif%}{{{{/raw}}}}" /></a>
+                                    src="\{{ item.product.images.0.src }}"
+                                    alt="item.product.title" style="font-size: 12px;"/></a>
                         </td>
 
                         <td style="width: 35%">
@@ -72,8 +73,8 @@
                     <tr>
                         <td>
                             <center>
-                                <img
-                                    src="{{{{raw}}}}{% if item.product.variant.images.0.src %}{{item.product.variant.images.0.src}}{%else%}{{item.product.images.0.src|missing_product_image}}{%endif%}{{{{/raw}}}}" />
+                                <img src="\{{ item.product.images.0.src }}"
+                                      alt="item.product.title" style="font-size: 12px;"/>
                             </center>
                             <spacer size="10"></spacer>
                         </td>

@@ -1,0 +1,88 @@
+pet-icon-gold.png - 48
+https://d3k81ch9hvuctc.cloudfront.net/company/YxcUcn/images/bab34cba-2eca-441b-811f-703aaee56be3.png
+
+pet-icon-silver-cash.png - 120
+https://d3k81ch9hvuctc.cloudfront.net/company/YxcUcn/images/742cb207-777f-4d29-bb40-c35ec4808086.png
+
+pet-icon-silver-cover.png - 120
+https://d3k81ch9hvuctc.cloudfront.net/company/YxcUcn/images/8a6e5c8c-5e78-4d01-a15d-6339e9638af7.png
+
+pet-icon-silver-truck.png - 120
+https://d3k81ch9hvuctc.cloudfront.net/company/YxcUcn/images/9feb2159-33f0-4d5a-926b-107cedbff68e.png
+
+pet-footer-cat.png - 390
+https://d3k81ch9hvuctc.cloudfront.net/company/YxcUcn/images/7e5e03b3-8a56-46da-b526-dbbd967215d7.png
+
+pet-footer-catfeet.png - 390
+https://d3k81ch9hvuctc.cloudfront.net/company/YxcUcn/images/d5500ff0-d5cb-4416-86b6-ee16645bbbb1.png
+
+pet-footer-cats.png - 390
+https://d3k81ch9hvuctc.cloudfront.net/company/YxcUcn/images/8f53a2f9-050b-4b4e-83a8-999695c9d5fe.png
+
+pet-footer-cattail.png - 390
+https://d3k81ch9hvuctc.cloudfront.net/company/YxcUcn/images/6673e9aa-6f3d-4d13-95a9-310f5b669397.png
+
+pet-footer-dog.png - 390
+https://d3k81ch9hvuctc.cloudfront.net/company/YxcUcn/images/00a1018e-2ed2-4bdb-9bb5-1e386460d53e.png
+
+pet-header-cat-girl-dog-party.png - 1200
+https://d3k81ch9hvuctc.cloudfront.net/company/YxcUcn/images/fe551daf-11a2-43fa-b671-83c48e70e7ec.png
+
+pet-header-child-cat-thumbup.png - 1200
+https://d3k81ch9hvuctc.cloudfront.net/company/YxcUcn/images/948b76e8-1de6-40db-a001-1b34fa7d9c6f.png
+
+pet-header-child-dog-thumbup.png - 1200
+https://d3k81ch9hvuctc.cloudfront.net/company/YxcUcn/images/aaf2df1f-8db6-401a-a823-dd307a77c4f2.png
+
+pet-header-dog-cat-overhead.png - 1200
+https://d3k81ch9hvuctc.cloudfront.net/company/YxcUcn/images/146ce549-e780-4019-b9d2-b82ac70ca5cf.png
+
+pet-header-dog-cat-paper.png - 1200
+https://d3k81ch9hvuctc.cloudfront.net/company/YxcUcn/images/558465bd-c342-4e4a-af6e-dfcdb54c6f65.png
+
+pet-header-men-dog-money.png - 1200
+https://d3k81ch9hvuctc.cloudfront.net/company/YxcUcn/images/54a01017-34c6-49af-b274-bbda9dab4913.png
+
+pet-seperator-catbag.png - 1200
+https://d3k81ch9hvuctc.cloudfront.net/company/YxcUcn/images/208c3a2b-d065-4687-b52c-62668ce7c093.png
+
+pet-seperator-dogbag.png - 1200
+https://d3k81ch9hvuctc.cloudfront.net/company/YxcUcn/images/b5308e58-4fcb-44c7-9a63-b5d12f86d011.png
+
+pet-seperator-greycat.png - 1200
+https://d3k81ch9hvuctc.cloudfront.net/company/YxcUcn/images/5a439ebe-e61c-4079-8dd7-1068c74f3cc9.png
+
+pet-seperator-greycat-1.png
+https://d3k81ch9hvuctc.cloudfront.net/company/YxcUcn/images/aa3c06f7-980d-4172-bf18-0313cf9bf5e2.png
+
+pet-seperator-greycat-2.png
+https://d3k81ch9hvuctc.cloudfront.net/company/YxcUcn/images/3f43eb09-27d2-4c3b-b787-2a803bd69faf.png
+
+pet-seperator-greycat-3.png
+https://d3k81ch9hvuctc.cloudfront.net/company/YxcUcn/images/49b29013-6f89-4251-8881-925fbce18b6d.png
+
+pet-footer-icon-facebook.png - 36
+
+pet-footer-icon-instagram.png - 36
+
+pet-footer-icon-twitter.png - 36
+
+pet-footer-petculture-text.png - 175
+
+pet-footer-petculture-text-mobile.png - 175
+
+pet-header-cat-helicopter.png - 600
+
+pet-header-womencover-dog.png - 600
+
+pet-icon-circle.png - 120
+
+pet-icon-speech.png - 120
+
+pet-icon-truck.png - 120
+
+product-advance.png - 120
+
+product-blackhawk.png - 120
+
+product-ivorycoat.png - 120

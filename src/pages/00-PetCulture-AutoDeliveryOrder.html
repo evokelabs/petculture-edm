@@ -22,12 +22,10 @@ subject: Pet Culture Template
       <spacer size="10"></spacer>
     </center>
   </container>
-  {{>header-cat-girl-dog-party}}
-  {{>header-child-cat-thumbup}}
-  {{>header-child-dog-thumbup}}
-  {{>header-dog-cat-overhead}}
-  {{>header-dog-cat-paper}}
-  {{>header-men-dog-money}}
+  <container class="background-white">
+    <img src="https://d3k81ch9hvuctc.cloudfront.net/company/YxcUcn/images/cc4d3bfa-387a-497f-88cb-77a8779c427b.png"
+      alt="pet culture" style="font-family: 'Euclid Circular B', Helvetica, sans-serif; font-weight: bold; font-size: 40px; color: #000; text-align: center;"/>
+  </container>
   <!-- Header End -->
 
   <!-- Intro Copy Start -->
@@ -38,7 +36,7 @@ subject: Pet Culture Template
         <h3 class="text-center">Your auto-delivery order is now set up</h3>
         <spacer size="15"></spacer>
         <p class="small-text-center">
-          Hey \{{ first_name|title|default:'there' }}
+          Hi \{{ first_name|title|default:'there' }}
         </p>
         <spacer size="10"></spacer>
         <p class="small-text-center">
@@ -48,31 +46,24 @@ subject: Pet Culture Template
         <spacer size="10"></spacer>
         <p class="small-text-center">Thanks for shopping with PetCulture!</p>
         <spacer size="20"></spacer>
-          {{>button-track-your-package}}
-          {{>button-manage-order}}
-          {{>button-change-order}}
-          {{>button-reorder}}
-          {{>button-update-payment-method}}
-          {{>button-renew-your-silver-membership}}
-          {{>button-rejoin}}
-          {{>button-manage-payment}}
-          {{>button-shop-now}}
+        <!-- Intro CTA Start -->
+        <center>
+          <button class="rounded" href="\{{ event.extra.checkout_url}}">Track your package</button>
+        </center>
+        <spacer size="20"></spacer>
+        <!-- Intro CTA End -->
       </columns>
     </row>
   </container>
-  <!-- Intro Copy End  -->
+  <!-- Intro Copy End  -->  
   {{>delivery-summary}}
-  {{>delivery-summary-gold}}
-  {{>silver-benefits}}
-  {{>order-summary-static}}
-  {{>seperator-gamechanger-cat}}
-  {{>seperator-gamechanger-dog}}
-  {{>seperator-need-help}}
-  {{>seperator-free-delivery}}
-  {{>delivery-policies}}
-  {{>footer-1-cat}}
-  {{>footer-2-dog}}
-  {{>footer-3-cats}}
-  {{>footer-4-paws}}
-  {{>footer-5-tails}}
+  {{>order-summary}}
+    <!-- Game Changers Start -->
+    <container>
+      <img src="https://d3k81ch9hvuctc.cloudfront.net/company/YxcUcn/images/61bc02a1-9467-473b-9aeb-be66a238c905.png"
+        alt="A game changer for Pet Parents" style="font-family: 'Euclid Circular B', Helvetica, sans-serif; font-weight:
+      bold; font-size: 24px; color: #282828; text-align: center; background-color: #f9d5c1;" />
+    </container>
+    <!-- Game Changers End -->
   {{>footer}}
+</wrapper>

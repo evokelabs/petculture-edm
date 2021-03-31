@@ -16,17 +16,18 @@
 // ---------
 
 $primary-color: #FE2C55;
-$secondary-color: #50535A;
+$secondary-color: #1B1B1B;
 $success-color: #3adb76;
 $warning-color: #ffae00;
 $alert-color: #ec5840;
 $light-gray: #f1f5f4;
-$medium-gray: #F1F2EA;
+$medium-gray: #C9CCCC;
 $dark-gray: #282828;
 $purple: #753BBD;
 $blue: #F0F5F5;
 $pink: #FE2C55;
-$black: #000000;
+$red: #E32C28;
+$black: #1B1B1B;
 $white: #ffffff;
 $pre-color: #ff6c00;
 $link-color: $secondary-color;
@@ -100,7 +101,7 @@ $stat-font-size: 40px;
 $button-padding: (
   tiny: 2px 5px 2px 5px,
   small: 5px 10px 5px 10px,
-  default: 20px 40px 20px 40px,
+  default: 18px 40px 18px 40px,
   large: 10px 20px 10px 20px
 );
 $button-font-size: (
