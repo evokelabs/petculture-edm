@@ -1,0 +1,55 @@
+---
+subject: Your Silver membership has expired
+---
+
+<wrapper class="table-width-full">
+  <!-- Header Start-->
+  <container class="background-darkgrey">
+    <spacer size="10"></spacer> 
+    <center>
+      <table style="width: 80%">
+        <tr>
+          <td style="text-align: left">
+            <small>But it’s easy to renew and get all the great benefits.</small>
+          </td>
+
+          <td style="text-align: right">
+            <a href="{% web_view_link %}" style="color: #fff; text-decoration: underline"><small>View in your
+                browser</small></a>
+          </td>
+        </tr>
+      </table>
+      <spacer size="10"></spacer>
+    </center>
+  </container>
+  {{>header-dog-cat-paper}}
+  <!-- Header End -->
+
+  <!-- Intro Copy Start -->
+  <container class="background-white">
+    <row>
+      <columns>
+        <spacer size="30"></spacer>
+        <h3 class="text-center">Your Silver membership has expired</h3>
+        <spacer size="15"></spacer>
+        <p class="small-text-center">
+          Hey \{{ first_name|title|default:'there' }},
+        </p>
+        <spacer size="10"></spacer>
+        <p class="small-text-center">
+         Just letting you know that your PetCulture Silver membership has expired, and we’ve had to change your
+         membership status to Bronze.
+        </p>
+        <spacer size="10"></spacer>
+        <p class="small-text-center">You can easily reactivate your Silver status by spending over $50 a month on your
+          pet’s needs.</p>
+      </columns>
+    </row>
+  </container>
+  <!-- Intro Copy End  -->
+  {{>silver-benefits}}
+  {{>seperator-free-delivery}}
+  {{>seperator-need-help}}
+  {{>delivery-policies}}
+  {{>footer-4-paws}}
+  {{>footer}}

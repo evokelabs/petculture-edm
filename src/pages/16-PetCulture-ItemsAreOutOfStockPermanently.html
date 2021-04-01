@@ -1,0 +1,57 @@
+---
+subject: Items are out of stock permanently
+---
+
+<wrapper class="table-width-full">
+  <!-- Header Start-->
+  <container class="background-darkgrey">
+    <spacer size="10"></spacer>
+    <center>
+      <table style="width: 80%">
+        <tr>
+          <td style="text-align: left">
+            <small>But we have plenty of other goodies to choose from.</small>
+          </td>
+
+          <td style="text-align: right">
+            <a href="{% web_view_link %}" style="color: #fff; text-decoration: underline"><small>View in your
+                browser</small></a>
+          </td>
+        </tr>
+      </table>
+      <spacer size="10"></spacer>
+    </center>
+  </container>
+  {{>header-dog-cat-overhead}}
+  <!-- Header End -->
+
+  <!-- Intro Copy Start -->
+  <container class="background-white">
+    <row>
+      <columns>
+        <spacer size="30"></spacer>
+        <h3 class="text-center">Your items are out of stock permanently</h3>
+        <spacer size="15"></spacer>
+        <p class="small-text-center">
+          Hi \{{ first_name|title|default:'there' }},
+        </p>
+        <spacer size="10"></spacer>
+        <p class="small-text-center">
+          Unfortunately we are unable to fulfil your auto-delivery order as we no longer stock one or more of the items
+          you’ve ordered. If you’d like to shop for replacement items just follow the link below.
+        </p>
+        <spacer size="10"></spacer>
+        <p class="small-text-center">Our apologies for any inconvenience and thanks for shopping with PetCulture.</p>
+        <spacer size="20"></spacer>
+      </columns>
+    </row>
+  </container>
+  {{>button-manage-order}}
+  <!-- Intro Copy End  -->
+  {{>order-summary-outofstock}}
+  {{>delivery-summary}}
+  {{>button-manage-order}}
+  {{>seperator-need-help}}
+  {{>delivery-policies}}
+  {{>footer-3-cats}}
+  {{>footer}}

@@ -1,5 +1,5 @@
 ---
-subject: Pet Culture Template
+subject: Your auto-delivery order has been paused
 ---
 
 <wrapper class="table-width-full">
@@ -10,7 +10,7 @@ subject: Pet Culture Template
       <table style="width: 80%">
         <tr>
           <td style="text-align: left">
-            <small>We know your pet will love you for it.</small>
+            <small>But you can un-pause it any time … or unpaws it.</small>
           </td>
 
           <td style="text-align: right">
@@ -22,57 +22,37 @@ subject: Pet Culture Template
       <spacer size="10"></spacer>
     </center>
   </container>
-  {{>header-cat-girl-dog-party}}
-  {{>header-child-cat-thumbup}}
-  {{>header-child-dog-thumbup}}
   {{>header-dog-cat-overhead}}
-  {{>header-dog-cat-paper}}
-  {{>header-men-dog-money}}
   <!-- Header End -->
-
   <!-- Intro Copy Start -->
   <container class="background-white">
     <row>
       <columns>
         <spacer size="30"></spacer>
-        <h3 class="text-center">Your auto-delivery order is now set up</h3>
+        <h3 class="text-center">Your auto-delivery order has been paused</h3>
         <spacer size="15"></spacer>
         <p class="small-text-center">
           Hey \{{ first_name|title|default:'there' }},
         </p>
         <spacer size="10"></spacer>
         <p class="small-text-center">
-          Just letting you know we received your request for a new PetCulture auto-delivery shopping
-          order and that we’ve set it up in our system.
+          Just letting you know we received your request to pause your existing PetCulture auto-delivery order. To
+          resume
+          your order, you’ll need to visit your PetCulture account
+          and unpause the auto-delivery.
         </p>
         <spacer size="10"></spacer>
         <p class="small-text-center">Thanks for shopping with PetCulture!</p>
         <spacer size="20"></spacer>
-          {{>button-track-your-package}}
-          {{>button-manage-order}}
-          {{>button-change-order}}
-          {{>button-reorder}}
-          {{>button-update-payment-method}}
-          {{>button-renew-your-silver-membership}}
-          {{>button-rejoin}}
-          {{>button-manage-payment}}
-          {{>button-shop-now}}
       </columns>
     </row>
   </container>
+  {{>button-resume-order}}
   <!-- Intro Copy End  -->
   {{>delivery-summary}}
-  {{>delivery-summary-gold}}
-  {{>silver-benefits}}
-  {{>order-summary-static}}
+  {{>order-summary}}
+  {{>button-resume-order}}
   {{>seperator-gamechanger-cat}}
-  {{>seperator-gamechanger-dog}}
-  {{>seperator-need-help}}
-  {{>seperator-free-delivery}}
   {{>delivery-policies}}
-  {{>footer-1-cat}}
-  {{>footer-2-dog}}
-  {{>footer-3-cats}}
   {{>footer-4-paws}}
-  {{>footer-5-tails}}
   {{>footer}}

@@ -1,5 +1,5 @@
 ---
-subject: Pet Culture Template
+subject: Your membership has been cancelled
 ---
 
 <wrapper class="table-width-full">
@@ -10,7 +10,7 @@ subject: Pet Culture Template
       <table style="width: 80%">
         <tr>
           <td style="text-align: left">
-            <small>We know your pet will love you for it.</small>
+            <small>Rejoin anytime to get all the great benefits.</small>
           </td>
 
           <td style="text-align: right">
@@ -22,12 +22,7 @@ subject: Pet Culture Template
       <spacer size="10"></spacer>
     </center>
   </container>
-  {{>header-cat-girl-dog-party}}
-  {{>header-child-cat-thumbup}}
-  {{>header-child-dog-thumbup}}
   {{>header-dog-cat-overhead}}
-  {{>header-dog-cat-paper}}
-  {{>header-men-dog-money}}
   <!-- Header End -->
 
   <!-- Intro Copy Start -->
@@ -35,44 +30,27 @@ subject: Pet Culture Template
     <row>
       <columns>
         <spacer size="30"></spacer>
-        <h3 class="text-center">Your auto-delivery order is now set up</h3>
+        <h3 class="text-center">Your membership has been cancelled</h3>
         <spacer size="15"></spacer>
         <p class="small-text-center">
           Hey \{{ first_name|title|default:'there' }},
         </p>
         <spacer size="10"></spacer>
         <p class="small-text-center">
-          Just letting you know we received your request for a new PetCulture auto-delivery shopping
-          order and that we’ve set it up in our system.
-        </p>
+        Just letting you know that we tried to debit your card for your PetCulture auto payment [X] times, but the card
+        was declined each time. Unfortunately we’ve had to cancel your membership and as a result all its benefits have
+        expired too.</p>
         <spacer size="10"></spacer>
-        <p class="small-text-center">Thanks for shopping with PetCulture!</p>
+        <p class="small-text-center">While services like VetChat and our Aussie Hazard Cover are no longer available to
+          you and [PET’S NAME] at the moment, it’s easy to rejoin. Just click on the link below.</p>
         <spacer size="20"></spacer>
-          {{>button-track-your-package}}
-          {{>button-manage-order}}
-          {{>button-change-order}}
-          {{>button-reorder}}
-          {{>button-update-payment-method}}
-          {{>button-renew-your-silver-membership}}
-          {{>button-rejoin}}
-          {{>button-manage-payment}}
-          {{>button-shop-now}}
       </columns>
     </row>
   </container>
   <!-- Intro Copy End  -->
-  {{>delivery-summary}}
   {{>delivery-summary-gold}}
-  {{>silver-benefits}}
-  {{>order-summary-static}}
+  {{>button-rejoin}}
   {{>seperator-gamechanger-cat}}
-  {{>seperator-gamechanger-dog}}
-  {{>seperator-need-help}}
-  {{>seperator-free-delivery}}
   {{>delivery-policies}}
-  {{>footer-1-cat}}
-  {{>footer-2-dog}}
-  {{>footer-3-cats}}
   {{>footer-4-paws}}
-  {{>footer-5-tails}}
   {{>footer}}

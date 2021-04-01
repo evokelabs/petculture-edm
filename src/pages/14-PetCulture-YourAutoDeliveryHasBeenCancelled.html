@@ -1,0 +1,57 @@
+---
+subject: Your auto-delivery has been cancelled
+---
+
+<wrapper class="table-width-full">
+  <!-- Header Start-->
+  <container class="background-darkgrey">
+    <spacer size="10"></spacer>
+    <center>
+      <table style="width: 80%">
+        <tr>
+          <td style="text-align: left">
+            <small>But you can easily reorder whenever you like.</small>
+          </td>
+
+          <td style="text-align: right">
+            <a href="{% web_view_link %}" style="color: #fff; text-decoration: underline"><small>View in your
+                browser</small></a>
+          </td>
+        </tr>
+      </table>
+      <spacer size="10"></spacer>
+    </center>
+  </container>
+  {{>header-dog-cat-overhead}}
+  <!-- Header End -->
+
+  <!-- Intro Copy Start -->
+  <container class="background-white">
+    <row>
+      <columns>
+        <spacer size="30"></spacer>
+        <h3 class="text-center">Sorry your order’s been cancelled</h3>
+        <spacer size="15"></spacer>
+        <p class="small-text-center">
+          Hi \{{ first_name|title|default:'there' }},
+        </p>
+        <spacer size="10"></spacer>
+        <p class="small-text-center">
+         Just letting you know that as your PetCulture payment details have not been updated, we’ve had to cancel your
+         auto-delivery order.
+        </p>
+        <spacer size="10"></spacer>
+        <p class="small-text-center">To reorder just follow the link.</p>
+        <spacer size="20"></spacer>
+      </columns>
+    </row>
+  </container>
+  {{>button-reorder}}
+  <!-- Intro Copy End  -->
+  {{>order-summary-cancelled}}
+  {{>delivery-summary}}
+  {{>button-reorder}}
+  {{>seperator-need-help}}
+  {{>delivery-policies}}
+  {{>footer-2-dog}}
+  {{>footer}}
