@@ -1,0 +1,58 @@
+---
+subject: Get the most from your gold membership
+---
+
+<wrapper class="table-width-full">
+  <!-- Header Start-->
+  <container class="background-darkgrey">
+    <spacer size="10"></spacer>
+    <center>
+      <table style="width: 80%">
+        <tr>
+          <td style="text-align: left">
+            <small>How to get the best for your pet & for you.</small>
+          </td>
+
+          <td style="text-align: right">
+            <a href="{% web_view_link %}" style="color: #fff; text-decoration: underline"><small>View in your
+                browser</small></a>
+          </td>
+        </tr>
+      </table>
+      <spacer size="10"></spacer>
+    </center>
+  </container>
+  {{>header-cat-girl-dog-party}}
+  <!-- Header End -->
+
+  <!-- Intro Copy Start -->
+  <container class="background-white">
+    <row>
+      <columns>
+        <spacer size="30"></spacer>
+        <h3 class="text-center">Welcome to your Gold membership</h3>
+        <spacer size="15"></spacer>
+        <p class="small-text-center">
+          Hey \{{ first_name|title|default:'there' }},
+        </p>
+        <spacer size="10"></spacer>
+        <p class="small-text-center">
+        It’s great to have you and [PET’S NAME] with us at PetCulture. There are so many great Gold membership benefits, and we
+        want to help you make the most of them.
+        </p>
+        <spacer size="20"></spacer>
+      </columns>
+    </row>
+  </container>
+    <!-- Intro Copy End  -->
+  {{>gold-membership-benefits}}
+  {{>seperator-fitbark}}
+  <container>
+    <spacer size-lg="30" size-sm="15"></spacer>
+  </container>
+  {{>button-shop-now}}
+  <container>
+    <spacer size-lg="30" size-sm="15"></spacer>
+  </container>
+  {{>footer-4-paws}}
+  {{>footer}}

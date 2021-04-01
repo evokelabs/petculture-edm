@@ -1,3 +1,57 @@
+pet-icon-gold-benefits - 74
+https://d3k81ch9hvuctc.cloudfront.net/company/YxcUcn/images/b57dd027-cb39-40ec-8c51-73c71738050a.png
+
+pet-icon-silver-benefits - 74
+https://d3k81ch9hvuctc.cloudfront.net/company/YxcUcn/images/3c00a590-bf6a-45bb-82fd-675ac4fcb354.png
+
+pet-icon-silver-cover - 120
+https://d3k81ch9hvuctc.cloudfront.net/company/YxcUcn/images/8a6e5c8c-5e78-4d01-a15d-6339e9638af7.png
+
+pet-icon-silver-truck - 120
+https://d3k81ch9hvuctc.cloudfront.net/company/YxcUcn/images/9feb2159-33f0-4d5a-926b-107cedbff68e.png
+
+pet-icon-silver-save - 120
+https://d3k81ch9hvuctc.cloudfront.net/company/YxcUcn/images/c1e29e30-0af8-4ab2-8297-0d9129c222ee.png
+
+pet-icon-silver-cash - 120
+https://d3k81ch9hvuctc.cloudfront.net/company/YxcUcn/images/742cb207-777f-4d29-bb40-c35ec4808086.png
+
+pet-icon-gold-cover - 120
+https://d3k81ch9hvuctc.cloudfront.net/company/YxcUcn/images/40c0ecca-ba65-4d12-9b68-0632f30f1365.png
+
+pet-icon-gold-clock - 120
+https://d3k81ch9hvuctc.cloudfront.net/company/YxcUcn/images/619cf691-4faa-4fc6-bece-d27ea0f4ef4f.png
+
+pet-icon-gold-cogs - 120
+https://d3k81ch9hvuctc.cloudfront.net/company/YxcUcn/images/ce5d10f6-55d0-45ae-bfaf-bcfe427476f7.png
+
+pet-icon-gold-truck - 120
+https://d3k81ch9hvuctc.cloudfront.net/company/YxcUcn/images/c151992a-9356-404a-ac28-a168788100fd.png
+
+pet-icon-gold-cash - 120
+https://d3k81ch9hvuctc.cloudfront.net/company/YxcUcn/images/e79fc6d2-4f57-4a5d-b237-00a6f6740fae.png
+
+pet-seperator-fitbarktrackerpng
+https://d3k81ch9hvuctc.cloudfront.net/company/YxcUcn/images/6415bf3f-3813-4293-8de8-bf402e3c576d.png
+
+pet-footer-icon-facebook - 72
+https://d3k81ch9hvuctc.cloudfront.net/company/YxcUcn/images/b2f1eb61-7da7-48bd-bf3a-c1fe3cba7a6d.png
+
+pet-footer-icon-instagram - 72
+https://d3k81ch9hvuctc.cloudfront.net/company/YxcUcn/images/e4e477fe-47ab-4be2-8be0-c39587a48ddb.png
+
+pet-footer-icon-twitter - 72
+https://d3k81ch9hvuctc.cloudfront.net/company/YxcUcn/images/83c44957-7794-485e-944d-967618c31e11.png
+
+pet-icon-circle - 240
+https://d3k81ch9hvuctc.cloudfront.net/company/YxcUcn/images/5e81cee7-2a70-4d2e-a371-bde8c1815748.png
+
+pet-icon-speech - 240
+https://d3k81ch9hvuctc.cloudfront.net/company/YxcUcn/images/796ddec6-e106-4e08-9a0d-f14ba9804f05.png
+
+pet-icon-truck - 240
+https://d3k81ch9hvuctc.cloudfront.net/company/YxcUcn/images/176e2ef2-bd20-4ca8-b7bb-ec8e81df5799.png
+
 pet-icon-gold.png - 48
 https://d3k81ch9hvuctc.cloudfront.net/company/YxcUcn/images/bab34cba-2eca-441b-811f-703aaee56be3.png
 

@@ -37,21 +37,30 @@ p {
     
 }
 
+.background-orange {
+  background-color: $orange;
+}
+
 .monserrat {
   font-family: 'Montserrat',  Helvetica, sans-serif;
   }
 
 .background-orange {
-  background-color: #FBE5D8;
+  background-color: #f9d5c1;
 }
 
-.background-medium-gray {
+.background-medium-gray,
+.background-mediumgray {
   background-color: $medium-gray
 }
 
 .background-darkgrey,
 .background-darkgray {
   background-color: $dark-gray;
+}
+.background-lightgrey,
+.background-lightgray {
+background-color: $light-gray
 }
 
 .background-black {
