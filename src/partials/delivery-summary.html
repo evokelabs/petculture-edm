@@ -14,9 +14,9 @@
                     <tr>
                         <td>
                             <p class="text-center" style="font-size: 14px">
-                                <strong>Order: \{{ event.extra.order_number }}</strong>
+                                <strong>Order: \{{event.extra.order_number}}</strong>
                                 <br />
-                                Placed on 8th March 2021
+                                Placed on \{{event.extra.processed_at|format_date_string|date:'l j F, Y'}}
                             </p>
                             <spacer size="10"></spacer>
                         </td>
@@ -26,10 +26,12 @@
                         <td>
                             <p style="font-size: 14px" class="text-center">
                                 <strong>Shipping info:</strong><br />
-                                James Smith<br />
-                                100 Harris St, Sydney NSW 2009<br />
-                                Australia<br />
-                                T: 0412345678
+                                \{{event.extra.shipping_address.name}}<br />
+                                \{{event.extra.shipping_address.address1}}, \{{event.extra.shipping_address.city}}
+                                \{{event.extra.shipping_address.province}}
+                                \{{event.extra.shipping_address.zip}}<br />
+                                \{{event.extra.shipping_address.country}}<br />
+                                <!-- T: 0412345678 -->
                             </p>
                             <spacer size="10"></spacer>
                         </td>
@@ -37,15 +39,15 @@
                     <tr>
                         <td>
                             <p class="text-center">
-                                <strong>Tracking number:</strong> 1122334567899<br />
-                                <strong>Carrier:</strong> AusPost<br />
-                                <strong>Service:</strong> Standard 3-7 Business days
+                                <strong>Tracking number:</strong> \{{event.extra.fulfillments.0.tracking_number}}<br />
+                                <strong>Carrier:</strong> \{{event.extra.fulfillments.0.tracking_company}}<br />
+                                <strong>Service:</strong> \{{event.extra.fulfillments.0.service}}
                             </p>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <p class="text-center"><strong>Auto-order frequency</strong>: Every 3 weeks</p>
+                            <p class="text-center"><strong>Auto-order frequency</strong>:[[_subscription_frequency]]</p>
                             <spacer size="20"></spacer>
                         </td>
                     </tr>
@@ -70,16 +72,18 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <p style="font-size: 14px"><strong>Order: #0000123456789</strong></p>
-                                        <p>Placed on 8th March 2021</p>
+                                        <p style="font-size: 14px"><strong>Order: \{{event.extra.order_number}}</strong></p>
+                                        <p>Placed on \{{event.extra.processed_at|format_date_string|date:'l j F, Y'}}</p>
                                     </td>
                                     <td>
                                         <p style="font-size: 14px"><strong>Shipping info:</strong></p>
                                         <p>
-                                            James Smith<br />
-                                            100 Harris St, Sydney NSW 2009<br />
-                                            Australia<br />
-                                            T: 0412345678
+                                            \{{event.extra.shipping_address.name}}<br />
+                                            \{{event.extra.shipping_address.address1}}, \{{event.extra.shipping_address.city}}
+                                            \{{event.extra.shipping_address.province}} \{{event.extra.shipping_address.zip}}
+                                            <br />
+                                            \{{event.extra.shipping_address.country}}<br />
+                                            <!-- T: 0412345678 -->
                                         </p>
                                         <br />
                                     </td>
@@ -87,13 +91,15 @@
                                 <tr>
                                     <td>
                                         <p>
-                                            <strong>Tracking number:</strong> 1122334567899<br />
-                                            <strong>Carrier:</strong> AusPost<br />
-                                            <strong>Service:</strong> Standard 3-7 Business days
+                                            <strong>Tracking number:</strong>
+                                            \{{event.extra.fulfillments.0.tracking_number}}<br />
+                                            <strong>Carrier:</strong>
+                                            \{{event.extra.fulfillments.0.tracking_company}}<br />
+                                            <strong>Service:</strong> \{{event.extra.fulfillments.0.service}}
                                         </p>
                                     </td>
                                     <td>
-                                        <p><strong>Auto-order frequency</strong>: Every 3 weeks</p>
+                                        <p><strong>Auto-order frequency</strong>: [[_subscription_frequency]]</p>
                                     </td>
                                 </tr>
                             </table>

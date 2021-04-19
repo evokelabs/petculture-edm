@@ -16,7 +16,7 @@
                             <p class="text-center" style="font-size: 14px">
                                 <strong>Payment date:</strong>
                                 <br />
-                                Placed on 8th March 2021
+                                Placed on \{{event.extra.processed_at|format_date_string|date:'l j F, Y'}}
                             </p>
                             <spacer size="10"></spacer>
                         </td>
@@ -82,7 +82,7 @@
                                 <tr>
                                     <td style="width: 50%;">
                                         <p style="font-size: 14px"><strong>Payment date:</strong></p>
-                                        <p>Placed on 8th March 2021</p>
+                                        <p>Placed on \{{event.extra.processed_at|format_date_string|date:'l j F, Y'}}</p>
                                     </td>
                                     <td style="width: 50%;">
                                         <p style="font-size: 14px"><strong>Monthly Membership quantity:</strong></p>

@@ -1,3 +1,9 @@
+pet-footer-petculture-text.png - 350
+https://d3k81ch9hvuctc.cloudfront.net/company/YxcUcn/images/f4fc73ad-8a22-4249-9129-6cdd6b8eb002.png
+
+pet-footer-petculture-text-mobile.png - 350
+https://d3k81ch9hvuctc.cloudfront.net/company/YxcUcn/images/fb503d8b-2ec4-409c-a090-d5ad8b29332f.png
+
 pet-icon-gold-benefits - 74
 https://d3k81ch9hvuctc.cloudfront.net/company/YxcUcn/images/b57dd027-cb39-40ec-8c51-73c71738050a.png
 

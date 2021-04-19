@@ -125,7 +125,7 @@
                                     {% if event.extra.shipping_lines.0.price == "0.00" %}
                                     FREE {% else %}
                                     ${{ event.extra.shipping_lines.0.price }}</strong>{% endif %}<br>
-                                {% if event.extra.total_discounts_set.presentment_money.amount != "0.00" %}<strong>-${{ event.extra.total_discounts_set.presentment_money.amount }}</strong>
+                                {% if event.extra.total_discounts_set.presentment_money.amount != "0.00" %}<strong>-$\{{ event.extra.total_discounts_set.presentment_money.amount }}</strong>
                                 {% endif %}</strong><br>
                                 <br>
                                 <span
