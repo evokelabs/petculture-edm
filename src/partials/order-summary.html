@@ -36,10 +36,10 @@
                 <table style="width: 100%; border-bottom: 1px solid #c2c2c2;">
                     {% for item in event.extra.line_items %}
                     <tr>
-                        <td style="width: 25%" valign="top">
+                        <td style="width: 25%" valign="top" style="vertical-align: top;">
                             <a href="https://www.petculture.com.au/products/{{ item.product.handle }}"><img
                                     src="\{{ item.product.images.0.src }}"
-                                    alt="item.product.title" style="font-size: 12px;"/></a>
+                                    alt="item.product.title" style="font-size: 12px; display: inline-block"/></a>
                         </td>
 
                         <td style="width: 35%">
@@ -149,7 +149,7 @@
                         <td>
                             <p class="text-center" style="font-size: 12px"><strong>Shipping:
                                     {% if event.extra.shipping_lines.0.title == "FreeShipping" %}{% else %}
-                                    (\{{ event.extra.shipping_lines.0.title|title }}){% endif %}:</strong><br />
+                                    (\{{ event.extra.shipping_lines.0.price }}){% endif %}:</strong><br />
                                 <strong>FREE
                                     ${{ event.extra.shipping_lines.0.price }}</strong><br />
                         </td>
