@@ -48,7 +48,9 @@
                                 SKU: \{{ item.sku }}<br />
                                 <br />
                                 <br />
-                                <strong>Variant:</strong> \{{ item.product.variant.options.Title|title }}
+                                <strong>Variant:</strong> \{{ item.product.variant.options.Title|title }} <br />
+                                <br />
+                                <strong>Auto-order frequency:</strong> \{{item.product.properties|lookup:"_subscription_frequency"}}
                             </p>
                             <spacer size="50"></spacer>
                         </td>
@@ -87,6 +89,8 @@
                             <p class="text-center"><strong>Qty:</strong> \{{ item.quantity | floatformat:0 }}</p>
                             <p class="text-center"><strong>Variant:</strong>
                                 \{{ item.product.variant.options.Title|title }}</p>
+                                <p class="text-center"><strong>Auto-order frequency:</strong>
+                                    \{{item.product.properties|lookup:"_subscription_frequency"}}</p>
                         </td>
                     </tr>
                     <tr>
