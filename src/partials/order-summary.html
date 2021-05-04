@@ -106,31 +106,41 @@
             <div class="show-for-large">
                 <table style="width: 100%;">
                     <tr>
+                      <td style="width: 45%" valign="top"></td>
+                      <td style="width: auto"> <p style="font-size: 12px; line-height: 1.5; margin-bottom: 0;"><strong>Sub-Total:</strong></p></td>
+                      <td width="20" rowspan="6" style="width: 25px">&nbsp;</td>
+                      <td style="width: 25%"> <p style="font-size: 12px; line-height: 1.5; margin-bottom: 0;"><strong>$\{{ event.extra.total_line_items_price }}</strong></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 45%" valign="top"></td>
+                      <td style="width: auto" valign="top"><p style="font-size: 12px; line-height: 1.5; margin-bottom: 0;"><strong>Shipping:</strong></p></td>
+                      <td style="width: 25%" valign="top"> <p style="font-size: 12px; line-height: 1.5; margin-bottom: 0;"><strong>{% if event.extra.shipping_lines.0.price == "0.00" %} FREE {% else %} $\{{ event.extra.shipping_lines.0.price }}</strong>{% endif %}</td>
+                    </tr>
+                    <tr>
+                      <td style="width: 45%" valign="top"></td>
+                      <td style="width: auto" valign="top"><p style="font-size: 12px; line-height: 1.5; margin-bottom: 0;">{% if event.extra.total_discounts_set.presentment_money.amount != "0.00" %}<strong>Discount:</strong><br>(\{{event.extra.discount_applications.0.title|title }}){% endif %}</p></td>
+                      <td style="width: 25%" valign="top"> <p style="font-size: 12px; line-height: 1.5; margin-bottom: 0;">
+                                <strong>{% if event.extra.total_discounts_set.presentment_money.amount != "0.00" %}<strong>-$\{{ event.extra.total_discounts_set.presentment_money.amount }}</strong>
+                                {% endif %}</strong></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 45%" valign="top"></td>
+                      <td style="width: auto">&nbsp;</td>
+                      <td style="width: 25%"></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 45%" valign="top"></td>
+                      <td style="width: auto" valign="top"><p style="font-size: 12px; line-height: 1.5; margin-bottom: 0;"><strong><span style="font-size: 14px;">Order Total:</span></strong></p></td>
+                      <td style="width: 25%" valign="top"> <p style="font-size: 12px; line-height: 1.5; margin-bottom: 0;"><strong><span style="font-size: 14px;">$\{{ event|lookup:'$value' | floatformat:2 }}</span></strong></td>
+                    </tr>
+                    <tr>
                         <td style="width: 45%" valign="top">
                         </td>
-                        <td style="width: auto">
-                            <p style="font-size: 12px; line-height: 1.5;"><strong>Sub-Total:</strong><br>
-                                <strong>Shipping:</strong><br>
-                                {% if event.extra.total_discounts_set.presentment_money.amount != "0.00" %}
-                                <strong>Discount:</strong>(\{{ event.extra.discount_applications.0.title|title }}):
-                                {% endif %}<br>
-                                <br>
-                                <strong><span style="font-size: 14px;">Order Total:</span></strong><br>
-                                (Inc GST):</p>
-                            </br>
+                        <td style="width: auto" valign="top"><p style="font-size: 12px; line-height: 1.5; margin-bottom: 0;">(Inc GST):</p>
                         </td>
-                        <td style="width: 25%">
-                            <p style="font-size: 12px; line-height: 1.5;">
-                                <strong>$\{{ event.extra.total_line_items_price }}<br />
-                                    {% if event.extra.shipping_lines.0.price == "0.00" %}
-                                    FREE {% else %}
-                                    ${{ event.extra.shipping_lines.0.price }}</strong>{% endif %}<br>
-                                {% if event.extra.total_discounts_set.presentment_money.amount != "0.00" %}<strong>-$\{{ event.extra.total_discounts_set.presentment_money.amount }}</strong>
-                                {% endif %}</strong><br>
-                                <br>
-                                <span
-                                    style="font-size: 14px;"><strong>$\{{ event|lookup:'$value' | floatformat:2 }}</strong></span><br>
-                                $\{{ event.extra.tax_lines.0.price }}</p>
+                        <td style="width: 25%" valign="top">
+                            <p style="font-size: 12px; line-height: 1.5; margin-bottom: 0;">
+								<strong>$\{{ event.extra.tax_lines.0.price }}</strong></p>
                         </td>
                     </tr>
                 </table>
@@ -148,10 +158,8 @@
                     <tr>
                         <td>
                             <p class="text-center" style="font-size: 12px"><strong>Shipping:
-                                    {% if event.extra.shipping_lines.0.title == "FreeShipping" %}{% else %}
+                                    {% if event.extra.shipping_lines.0.title == "Free Standard Shipping" %}FREE{% else %}
                                     (\{{ event.extra.shipping_lines.0.price }}){% endif %}:</strong><br />
-                                <strong>FREE
-                                    ${{ event.extra.shipping_lines.0.price }}</strong><br />
                         </td>
                     </tr>
                     <tr>
