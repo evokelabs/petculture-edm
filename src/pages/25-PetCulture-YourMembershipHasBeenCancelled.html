@@ -1,5 +1,5 @@
 ---
-subject: Annual payment confirmation
+subject: Your membership has been cancelled
 ---
 
 <wrapper class="table-width-full">
@@ -10,7 +10,7 @@ subject: Annual payment confirmation
       <table style="width: 80%">
         <tr>
           <td style="text-align: left">
-            <small>Enjoy all the exclusive benefits with your Gold membership.</small>
+            <small>Rejoin anytime to get all the great benefits.</small>
           </td>
 
           <td style="text-align: right">
@@ -22,7 +22,7 @@ subject: Annual payment confirmation
       <spacer size="10"></spacer>
     </center>
   </container>
-  {{>header-men-dog-money}}
+  {{>header-dog-cat-overhead}}
   <!-- Header End -->
 
   <!-- Intro Copy Start -->
@@ -30,25 +30,27 @@ subject: Annual payment confirmation
     <row>
       <columns>
         <spacer size="30"></spacer>
-        <h3 class="text-center">Annual auto-payment has been processed</h3>
+        <h3 class="text-center">Your membership has been cancelled</h3>
         <spacer size="15"></spacer>
         <p class="small-text-center">
-          Hey \{{ first_name|title|default:'there' }},
+          Hi \{{first_name|title|default:'there'}},
         </p>
         <spacer size="10"></spacer>
         <p class="small-text-center">
-          Just letting you know that we’ve processed your annual <strong>Gold PetCulture membership payment.</strong>
-        </p>
+        Just letting you know that we tried to debit your card for your PetCulture auto payment three times, but the card
+        was declined each time. Unfortunately we’ve had to cancel your membership and as a result all its benefits have
+        expired too.</p>
         <spacer size="10"></spacer>
-        <p class="small-text-center">Thanks for being a PetCulture Gold member. And thanks for shopping with us. We love having you and [PET’S NAME] at PetCulture!</p>
+        <p class="small-text-center">While services like VetChat and our Aussie Hazard Cover are no longer available to
+          you and \{{rxp_name}} at the moment, it’s easy to rejoin. Just click on the link below.</p>
         <spacer size="20"></spacer>
       </columns>
     </row>
   </container>
   <!-- Intro Copy End  -->
   {{>delivery-summary-gold}}
-  {{>button-shop-now}}
+  {{>button-rejoin}}
   {{>seperator-gamechanger-cat}}
   {{>delivery-policies}}
-  {{>footer-5-tails}}
+  {{>footer-4-paws}}
   {{>footer}}

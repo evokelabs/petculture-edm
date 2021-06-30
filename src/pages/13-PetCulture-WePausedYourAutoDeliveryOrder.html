@@ -33,7 +33,7 @@ subject: We paused your auto-delivery order
         <h3 class="text-center">We paused your auto-delivery order</h3>
         <spacer size="15"></spacer>
         <p class="small-text-center">
-          Hey \{{ first_name|title|default:'there' }},
+          Hi \{{first_name|title|default:'there'}},
         </p>
         <spacer size="10"></spacer>
         <p class="small-text-center">
@@ -44,12 +44,12 @@ subject: We paused your auto-delivery order
       </columns>
     </row>
   </container>
-  <!-- Intro Copy End  -->
+  {{>button-update-payment-method}}
   {{>delivery-summary-gold}}
-  {{>button-update-payment-method}}
   {{>order-summary}}
+  {{>delivery-summary}}
   {{>button-update-payment-method}}
-  {{>seperator-gamechanger-cat}}
+  {{>seperator-need-help}}
   {{>delivery-policies}}
   {{>footer-4-paws}}
   {{>footer}}

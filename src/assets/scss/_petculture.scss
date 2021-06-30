@@ -1,6 +1,7 @@
 // GLOBAL
 p {
   hyphens: none;
+  text-decoration: none;
 }
 .bold {
   font-weight: bold;
@@ -41,8 +42,15 @@ p {
   background-color: $orange;
 }
 
+.background-lightorange {
+  background-color: #FBE5D8;
+}
+
+
+
 .monserrat {
   font-family: 'Montserrat',  Helvetica, sans-serif;
+  line-height: 150%;
   }
 
 .background-orange {
@@ -71,6 +79,10 @@ background-color: $light-gray
   background-color: #fff;
 }
 
+h1, h2, h3 {
+  line-height: 1.1;
+}
+
 
 
 @media only screen and  (max-width: #{$global-breakpoint}) {
@@ -87,21 +99,11 @@ background-color: $light-gray
 }
 
 @media (prefers-color-scheme: dark) {
-
   .darkmode { background-color: #000000 !important}
-
 }
 
-
 // Custom Fonts
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-p, ol, li, ul { font-family: 'Roboto', 'Helvetica'; }
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-
-
-
+  
 @media all {
 
   @font-face { 
@@ -122,14 +124,51 @@ p, ol, li, ul { font-family: 'Roboto', 'Helvetica'; }
         url('https://cdn.shopify.com/s/files/1/0449/8479/5296/t/4/assets/EuclidCircularB-Semibold-WebS.svg#webfont') 
         format('svg'); /* Legacy iOS */ 
     } 
+
+
+    //Montserrat
+      @font-face {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_ZpC3gnD_g.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      @font-face {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_dJE3gnD_g.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      //Roboto      
+      /* latin */
+      @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: normal;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: bold;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmWUlfBBc4.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
 }
 
-table.button table td a {
-        font-family: "Euclid Circular B", Helvetica;
-}
-
+table.button table td a {font-family: "Euclid Circular B", Helvetica; font-weight: bold; line-height: 100%;}
 h1 { font-family: "Euclid Circular B", Helvetica; font-weight: 700; } 
 h2 { font-family: "Euclid Circular B", Helvetica; font-weight: 700; } 
 h3 { font-family: "Euclid Circular B", Helvetica; font-weight: bold; } 
 h4 { font-family: "Euclid Circular B", Helvetica; font-size: 24px; font-weight: bold; }
 h5 {font-family: "Euclid Circular B", Helvetica; font-size: 16px; font-weight: bold; color: #ffffff;}
+p, ol, li, ul { font-family: 'Roboto', 'Helvetica'; }

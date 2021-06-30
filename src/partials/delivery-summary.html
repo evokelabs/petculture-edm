@@ -1,60 +1,6 @@
 <container>
     <row>
-        <columns>
-            <!-- Delivery Summary Start Mobile-->
-            <div class="hide-for-large">
-                <table class="background-blue">
-                    <tr>
-                        <td>
-                            <spacer size="20"></spacer>
-                            <h3 class="text-center">Your auto-delivery summary</h3>
-                            <spacer size="15"></spacer>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p class="text-center" style="font-size: 14px">
-                                <strong>Order: \{{event.extra.order_number}}</strong>
-                                <br />
-                                Placed on \{{event.extra.processed_at|format_date_string|date:'l j F, Y'}}
-                            </p>
-                            <spacer size="10"></spacer>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <p style="font-size: 14px" class="text-center">
-                                <strong>Shipping info:</strong><br />
-                                \{{event.extra.shipping_address.name}}<br />
-                                \{{event.extra.shipping_address.address1}}, \{{event.extra.shipping_address.city}}
-                                \{{event.extra.shipping_address.province}}
-                                \{{event.extra.shipping_address.zip}}<br />
-                                \{{event.extra.shipping_address.country}}<br />
-                                <!-- T: 0412345678 -->
-                            </p>
-                            <spacer size="10"></spacer>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p class="text-center">
-                                <strong>Tracking number:</strong> \{{event.extra.fulfillments.0.tracking_number}}<br />
-                                <strong>Carrier:</strong> \{{event.extra.fulfillments.0.tracking_company}}<br />
-                                <strong>Service:</strong> \{{event.extra.fulfillments.0.service}}
-                            </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <!-- <p class="text-center"><strong>Auto-order frequency:</strong> \{{item.product.properties|lookup:"_subscription_frequency"}}</p> -->
-                            <spacer size="20"></spacer>
-                        </td>
-                    </tr>
-                </table>
-                <spacer size="20"></spacer>
-            </div>
-            <!-- Delivery Summary End Mobile-->
+        <columns>           
             <!-- Delivery Summary Start Desktop-->
             <div class="show-for-large">
                 <table class="background-blue">
@@ -117,6 +63,60 @@
                 <spacer size="30"></spacer>
             </div>
             <!-- Delivery Summary End Desktop  -->
+             <!-- Delivery Summary Start Mobile-->
+             <div class="hide-for-large">
+                <table class="background-blue">
+                    <tr>
+                        <td>
+                            <spacer size="20"></spacer>
+                            <h3 class="text-center">Your auto-delivery summary</h3>
+                            <spacer size="15"></spacer>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="text-center" style="font-size: 14px">
+                                <strong>Order: \{{event.extra.order_number}}</strong>
+                                <br />
+                                Placed on \{{event.extra.processed_at|format_date_string|date:'l j F, Y'}}
+                            </p>
+                            <spacer size="10"></spacer>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p style="font-size: 14px" class="text-center">
+                                <strong>Shipping info:</strong><br />
+                                \{{event.extra.shipping_address.name}}<br />
+                                \{{event.extra.shipping_address.address1}}, \{{event.extra.shipping_address.city}}
+                                \{{event.extra.shipping_address.province}}
+                                \{{event.extra.shipping_address.zip}}<br />
+                                \{{event.extra.shipping_address.country}}<br />
+                                <!-- T: 0412345678 -->
+                            </p>
+                            <spacer size="10"></spacer>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="text-center">
+                                <strong>Tracking number:</strong> \{{event.extra.fulfillments.0.tracking_number}}<br />
+                                <strong>Carrier:</strong> \{{event.extra.fulfillments.0.tracking_company}}<br />
+                                <strong>Service:</strong> \{{event.extra.fulfillments.0.service}}
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <!-- <p class="text-center"><strong>Auto-order frequency:</strong> \{{item.product.properties|lookup:"_subscription_frequency"}}</p> -->
+                            <spacer size="20"></spacer>
+                        </td>
+                    </tr>
+                </table>
+                <spacer size="20"></spacer>
+            </div>
+            <!-- Delivery Summary End Mobile-->
         </columns>
     </row>
 </container>

@@ -37,26 +37,26 @@
                     {% for item in event.extra.line_items %}
                     <tr>
                         <td style="width: 25%" valign="top">
-                            <a href="https://www.petculture.com.au/products/{{ item.product.handle }}"><img
-                                    src="\{{ item.product.images.0.src }}"
+                            <a href="https://www.petculture.com.au/products/{{item.product.handle}}"><img
+                                    src="\{{item.product.images.0.src}}"
                                     alt="item.product.title" style="font-size: 12px;"/></a>
                         </td>
 
                         <td style="width: 35%">
                             <p style="font-size: 12px">
-                                \{{ item.product.title }}<br />
-                                SKU: \{{ item.sku }}<br />
+                                \{{item.product.title}}<br />
+                                SKU: \{{item.sku}}<br />
                                 <br />
                                 <br />
-                                <strong>Variant:</strong> \{{ item.product.variant.options.Title|title }}
+                                <strong>Variant:</strong> \{{item.product.variant.options.Title|title}}
                             </p>
                             <spacer size="50"></spacer>
                         </td>
                         <td style="width: 15%">
-                            <p><strong>\{{ item.quantity | floatformat:0 }}</strong></p>
+                            <p><strong>\{{item.quantity | floatformat:0}}</strong></p>
                         </td>
                         <td style="width: 25%">
-                            <p><strong>$\{{ item.line_price | floatformat:2 }}</strong></p>
+                            <p><strong>$\{{item.line_price | floatformat:2}}</strong></p>
                         </td>
                     </tr>
                     {% endfor %}
@@ -73,7 +73,7 @@
                     <tr>
                         <td>
                             <center>
-                                <img src="\{{ item.product.images.0.src }}"
+                                <img src="\{{item.product.images.0.src}}"
                                       alt="item.product.title" style="font-size: 12px;"/>
                             </center>
                             <spacer size="10"></spacer>
@@ -82,17 +82,17 @@
                     <tr>
                         <td>
                             <p class="text-center" style="font-size: 14px">
-                                \{{ item.product.title }}<br />
-                                SKU: \{{ item.sku }}</p>
-                            <p class="text-center"><strong>Qty:</strong> \{{ item.quantity | floatformat:0 }}</p>
+                                \{{item.product.title}}<br />
+                                SKU: \{{item.sku}}</p>
+                            <p class="text-center"><strong>Qty:</strong> \{{item.quantity | floatformat:0}}</p>
                             <p class="text-center"><strong>Variant:</strong>
-                                \{{ item.product.variant.options.Title|title }}</p>
+                                \{{item.product.variant.options.Title|title}}</p>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <p class="text-center"><strong>Item total:</strong><br>
-                                <strong>$\{{ item.line_price | floatformat:2 }}</strong></p>
+                                <strong>$\{{item.line_price | floatformat:2}}</strong></p>
                         </td>
                     </tr>
                     {% endfor %}
@@ -112,7 +112,7 @@
                             <p style="font-size: 12px; line-height: 1.5;"><strong>Sub-Total:</strong><br>
                                 <strong>Shipping:</strong><br>
                                 {% if event.extra.total_discounts_set.presentment_money.amount != "0.00" %}
-                                <strong>Discount:</strong>(\{{ event.extra.discount_applications.0.title|title }}):
+                                <strong>Discount:</strong>(\{{event.extra.discount_applications.0.title|title}}):
                                 {% endif %}<br>
                                 <br>
                                 <strong><span style="font-size: 14px;">Order Total:</span></strong><br>
@@ -121,16 +121,16 @@
                         </td>
                         <td style="width: 25%">
                             <p style="font-size: 12px; line-height: 1.5;">
-                                <strong>$\{{ event.extra.total_line_items_price }}<br />
+                                <strong>$\{{event.extra.total_line_items_price}}<br />
                                     {% if event.extra.shipping_lines.0.price == "0.00" %}
                                     FREE {% else %}
-                                    ${{ event.extra.shipping_lines.0.price }}</strong>{% endif %}<br>
-                                {% if event.extra.total_discounts_set.presentment_money.amount != "0.00" %}<strong>-${{ event.extra.total_discounts_set.presentment_money.amount }}</strong>
+                                    ${{event.extra.shipping_lines.0.price}}</strong>{% endif %}<br>
+                                {% if event.extra.total_discounts_set.presentment_money.amount != "0.00" %}<strong>-${{event.extra.total_discounts_set.presentment_money.amount}}</strong>
                                 {% endif %}</strong><br>
                                 <br>
                                 <span
-                                    style="font-size: 14px;"><strong>$\{{ event|lookup:'$value' | floatformat:2 }}</strong></span><br>
-                                $\{{ event.extra.tax_lines.0.price }}</p>
+                                    style="font-size: 14px;"><strong>$\{{event|lookup:'$value' | floatformat:2}}</strong></span><br>
+                                $\{{event.extra.tax_lines.0.price}}</p>
                         </td>
                     </tr>
                 </table>
@@ -142,16 +142,16 @@
                     <tr>
                         <td>
                             <p class="text-center" style="font-size: 12px"><strong>Sub-Total:
-                                    ${{ event.extra.total_line_items_price }}</strong></p>
+                                    ${{event.extra.total_line_items_price}}</strong></p>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <p class="text-center" style="font-size: 12px"><strong>Shipping:
                                     {% if event.extra.shipping_lines.0.title == "FreeShipping" %}{% else %}
-                                    (\{{ event.extra.shipping_lines.0.title|title }}){% endif %}:</strong><br />
+                                    (\{{event.extra.shipping_lines.0.title|title}}){% endif %}:</strong><br />
                                 <strong>FREE
-                                    ${{ event.extra.shipping_lines.0.price }}</strong><br />
+                                    ${{event.extra.shipping_lines.0.price}}</strong><br />
                         </td>
                     </tr>
                     <tr>
@@ -162,21 +162,21 @@
                         <td>
                             <p class="text-center" style="font-size: 12px">
                                 {% if event.extra.total_discounts_set.presentment_money.amount != "0.00" %}<strong>Discount
-                                </strong>(\{{ event.extra.discount_applications.0.title|title }}):<br />
-                                <strong>-$\{{ event.extra.total_discounts_set.presentment_money.amount }}</strong>
+                                </strong>(\{{event.extra.discount_applications.0.title|title}}):<br />
+                                <strong>-$\{{event.extra.total_discounts_set.presentment_money.amount}}</strong>
                                 {% endif %}</p>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <p class="text-center" style="font-size: 12px"><strong>Order Total:
-                                    <strong>$\{{ event|lookup:'$value' | floatformat:2 }}</strong></strong></p>
+                                    <strong>$\{{event|lookup:'$value' | floatformat:2}}</strong></strong></p>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <p class="text-center" style="font-size: 12px">(Inc GST)
-                                ${{ event.extra.tax_lines.0.price }}</p>
+                                ${{event.extra.tax_lines.0.price}}</p>
                         </td>
                     </tr>
                 </table>

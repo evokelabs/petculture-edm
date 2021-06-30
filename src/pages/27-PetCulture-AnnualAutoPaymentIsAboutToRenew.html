@@ -1,5 +1,5 @@
 ---
-subject: Your auto-delivery payment failed
+subject: Annual auto-payment is about to renew
 ---
 
 <wrapper class="table-width-full">
@@ -10,7 +10,7 @@ subject: Your auto-delivery payment failed
       <table style="width: 80%">
         <tr>
           <td style="text-align: left">
-            <small>So we may need to pause your auto-delivery order.</small>
+            <small>Ready for another year of exclusive benefits?</small>
           </td>
 
           <td style="text-align: right">
@@ -22,7 +22,7 @@ subject: Your auto-delivery payment failed
       <spacer size="10"></spacer>
     </center>
   </container>
-  {{>header-dog-cat-overhead}}
+  {{>header-dog-cat-paper}}
   <!-- Header End -->
 
   <!-- Intro Copy Start -->
@@ -30,26 +30,26 @@ subject: Your auto-delivery payment failed
     <row>
       <columns>
         <spacer size="30"></spacer>
-        <h3 class="text-center">Your auto-delivery payment failed</h3>
+        <h3 class="text-center">Annual auto-payment is about to renew</h3>
         <spacer size="15"></spacer>
         <p class="small-text-center">
-          Hi \{{first_name|title|default:'there'}},
+          Hey \{{first_name|title|default:'there'}},
         </p>
         <spacer size="10"></spacer>
         <p class="small-text-center">
-          Just letting you know that your PetCulture payment method has been declined. So we’ll need to pause your auto-delivery in 36 hours if your payment method is not updated.
+         Just letting you know that your annual <strong>Gold PetCulture membership</strong> payment is about to auto-renew. Thanks for your support over the past year.
         </p>
         <spacer size="10"></spacer>
-        <p class="small-text-center">To update your payment method just follow the link.</p>
+        <p class="small-text-center">We love having you and \{{rxp_name}} at PetCulture and hope you can stay with us.
+          But if for any reason you need to cancel your membership before it auto-renews, just follow this
+          <a href="https://www.petculture.com.au/Account/Login" style="text-decoration: underline;">link</a> to your account. </p>
         <spacer size="20"></spacer>
       </columns>
     </row>
   </container>
-  {{>button-update-payment}}
+  <!-- Intro Copy End  -->
   {{>delivery-summary-gold}}
-  {{>order-summary}}
-  {{>delivery-summary}}
-  {{>button-update-payment}}
+  {{>button-manage-payment}}
   {{>seperator-need-help}}
   {{>delivery-policies}}
   {{>footer-3-cats}}

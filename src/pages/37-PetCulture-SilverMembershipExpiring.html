@@ -1,5 +1,5 @@
 ---
-subject: Your membership has been cancelled
+subject: Your Silver membership is due to expire
 ---
 
 <wrapper class="table-width-full">
@@ -10,7 +10,7 @@ subject: Your membership has been cancelled
       <table style="width: 80%">
         <tr>
           <td style="text-align: left">
-            <small>Rejoin anytime to get all the great benefits.</small>
+            <small>Don’t miss out on all your great benefits.</small>
           </td>
 
           <td style="text-align: right">
@@ -22,7 +22,7 @@ subject: Your membership has been cancelled
       <spacer size="10"></spacer>
     </center>
   </container>
-  {{>header-dog-cat-overhead}}
+  {{>header-dog-cat-paper}}
   <!-- Header End -->
 
   <!-- Intro Copy Start -->
@@ -30,27 +30,23 @@ subject: Your membership has been cancelled
     <row>
       <columns>
         <spacer size="30"></spacer>
-        <h3 class="text-center">Your membership has been cancelled</h3>
+        <h3 class="text-center">Your Silver membership is due to expire</h3>
         <spacer size="15"></spacer>
         <p class="small-text-center">
-          Hey \{{ first_name|title|default:'there' }},
+          Hey \{{first_name|title|default:'there'}},
         </p>
         <spacer size="10"></spacer>
         <p class="small-text-center">
-        Just letting you know that we tried to debit your card for your PetCulture auto payment [X] times, but the card
-        was declined each time. Unfortunately we’ve had to cancel your membership and as a result all its benefits have
-        expired too.</p>
-        <spacer size="10"></spacer>
-        <p class="small-text-center">While services like VetChat and our Aussie Hazard Cover are no longer available to
-          you and [PET’S NAME] at the moment, it’s easy to rejoin. Just click on the link below.</p>
+          Just a reminder that your PetCulture Silver membership <strong>will expire shortly.</strong></p>
         <spacer size="20"></spacer>
       </columns>
     </row>
   </container>
   <!-- Intro Copy End  -->
-  {{>delivery-summary-gold}}
-  {{>button-rejoin}}
-  {{>seperator-gamechanger-cat}}
+  {{>silver-membership-expire}}
+  {{>button-shop-to-keep-silver}}
+  {{>seperator-save-10}}
+  {{>seperator-need-help-with-order}}
   {{>delivery-policies}}
   {{>footer-4-paws}}
   {{>footer}}
