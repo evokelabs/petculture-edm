@@ -1,0 +1,124 @@
+<container>
+    <row>
+        <columns>           
+            <div class="show-for-large">
+                <table class="background-blue">
+                    <tr>
+                        <td></td>
+                        <td style="width: 20px"></td>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td colspan="2">
+                                        <spacer size="30"></spacer>
+                                        <h3 class="text-center">Your auto-payment summary</h3>
+                                        <spacer size="15"></spacer>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 50%;">
+                                        <p style="font-size: 14px"><strong>Payment date:</strong></p>
+                                        <p>Placed on \{{event.extra.processed_at|format_date_string|date:'l j F, Y'}}</p>
+                                    </td>
+                                    <td style="width: 50%;">
+                                        <p style="font-size: 14px"><strong>Monthly Membership quantity:</strong></p>
+                                        <table>
+                                            <tr>
+                                                <td style="vertical-align: middle; width: 30px; text-align: left;">
+                                                    <img src="https://d3k81ch9hvuctc.cloudfront.net/company/YxcUcn/images/bab34cba-2eca-441b-811f-703aaee56be3.png"
+                                                        width="24" style="width: 24px; display: inline-block;">
+                                                </td>
+                                                <td style="vertical-align: middle;">
+                                                    <p
+                                                        style="font-size: 14px; display: inline-block; margin: 0; margin-bottom: 0;">
+                                                        <strong>Gold membership</strong></p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <spacer size="10"></spacer>
+                                        <p>
+                                            <strong>Price:</strong> $9.95<br />
+                                            <span class="red"><strong>Payment method: Visa ending in 5290
+                                                    (cancelled)</strong></span>
+                                        </p>
+                                        <br />
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td style="width: 20px">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <spacer size="20"></spacer>
+                        </td>
+                    </tr>
+                </table>
+                <spacer size="30"></spacer>
+            </div>
+             <div class="hide-for-large">
+                <table class="background-blue">
+                    <tr>
+                        <td>
+                            <spacer size="20"></spacer>
+                            <h3 class="text-center">Your auto-payment summary</h3>
+                            <spacer size="15"></spacer>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="text-center" style="font-size: 14px">
+                                <strong>Payment date:</strong>
+                                <br />
+                                Placed on \{{event.extra.processed_at|format_date_string|date:'l j F, Y'}}
+                            </p>
+                            <spacer size="10"></spacer>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p style="font-size: 14px" class="text-center">
+                                <strong>Monthly Membership quantity:</strong><br />
+                            </p>
+                            <center>
+                                <table style="width: auto;">
+                                    <tr>
+                                        <td style="vertical-align: middle; width: 30px; text-align: center;">
+                                            <img src="https://d3k81ch9hvuctc.cloudfront.net/company/YxcUcn/images/bab34cba-2eca-441b-811f-703aaee56be3.png"
+                                                width="24" style="width: 24px; display: inline-block;">
+                                        </td>
+                                        <td style="vertical-align: middle;">
+                                            <p
+                                                style="font-size: 14px; display: inline-block; margin: 0; margin-bottom: 0;">
+                                                <strong>Gold membership</strong></p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </center>
+                            <spacer size="10"></spacer>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="text-center">
+                                <strong>Price:</strong> $9.95<br />
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="text-center">
+                                <span class="red"><strong>Payment method: Visa ending in 5290
+                                        (cancelled)</strong></span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+                <spacer size="20"></spacer>
+            </div>
+        </columns>
+    </row>
+</container>
