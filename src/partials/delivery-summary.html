@@ -25,10 +25,10 @@
                                         <p style="font-size: 14px"><strong>Shipping info:</strong></p>
                                         <p>
                                             \{{event.extra.shipping_address.name}}<br />
-                                            \{{event.extra.shipping_address.address1}}, \{{event.extra.shipping_address.city}}
-                                            \{{event.extra.shipping_address.province}} \{{event.extra.shipping_address.zip}}
+                                            \{{event.extra.shipping_address.address1}}<br />
+                                            \{{event.extra.shipping_address.city}}, \{{event.extra.shipping_address.province}}, \{{event.extra.shipping_address.zip}}
                                             <br />
-                                            \{{event.extra.shipping_address.country}}<br />
+                                            \{{event.extra.shipping_address.country}}
                                             <!-- T: 0412345678 -->
                                         </p>
                                         <br />
@@ -89,8 +89,9 @@
                             <p style="font-size: 14px" class="text-center">
                                 <strong>Shipping info:</strong><br />
                                 \{{event.extra.shipping_address.name}}<br />
-                                \{{event.extra.shipping_address.address1}}, \{{event.extra.shipping_address.city}}
-                                \{{event.extra.shipping_address.province}}
+                                \{{event.extra.shipping_address.address1}},<br />
+                                \{{event.extra.shipping_address.city}}, 
+                                \{{event.extra.shipping_address.province}}, 
                                 \{{event.extra.shipping_address.zip}}<br />
                                 \{{event.extra.shipping_address.country}}<br />
                                 <!-- T: 0412345678 -->
